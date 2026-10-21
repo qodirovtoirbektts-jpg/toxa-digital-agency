@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Agency (Toxa) — Kiber-Marketing, Web3 & Yuqori Konversiyali Raqamli Agentlik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="cyber-header">
+    <div class="container nav-box">
+      <a href="#" class="brand-cyber">
+        <span class="cyber-icon">⚡</span>
+        <span>DIGITAL AGENCY<span class="sub-toxa">Toxa</span></span>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Xizmatlar</a>
+        <a href="#cases">Keyslar</a>
+        <a href="#calculator">ROI Simulyator</a>
+        <a href="#process">Jarayon</a>
+      </nav>
+
+      <a href="#calculator" class="btn btn-neon">Loyiha Boshlash</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="cyber-hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="badge-neon"><i class="fa-solid fa-fire"></i> Biznesingizni 10x Tezlikda O'stiramiz</div>
+        <h1>Biznesingiz Uchun <br><span class="neon-text">Kiber-Tezlikdagi</span> Natijalar</h1>
+        <p>
+          Raqamli dunyoda shunchaki mavjud bo'lish yetarli emas — bozorni egallash kerak. Biz sun'iy intellekt, agressiv performance-marketing va Awwwards darajasidagi 3D veb-saytlar orqali savdolaringizni karrasiga oshiramiz.
+        </p>
+        <div class="hero-actions">
+          <a href="#calculator" class="btn btn-neon btn-lg">Kalkulyatorda Hisoblash</a>
+          <a href="#cases" class="btn btn-outline-cyber btn-lg">Bizning Keyslar</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hud-panel">
+          <div class="hud-header">
+            <span>LIVE METRICS SYSTEM</span>
+            <span class="live-dot"></span>
+          </div>
+          <div class="metric-hud-row">
+            <div>
+              <small>Mijozlarga keltirilgan daromad:</small>
+              <h3 class="hud-counter" data-target="48">$48M+</h3>
+            </div>
+            <div>
+              <small>O'rtacha ROAS (Reklama rentabelligi):</small>
+              <h3 class="hud-counter">640%</h3>
+            </div>
+          </div>
+          <div class="hud-terminal">
+            <code>> AI Target optimizatsiyasi ishga tushirildi...</code>
+            <code>> Konversiya darajasi: +328% ga oshdi</code>
+            <code>> Status: Barcha kanallar maksimal quvvatda!</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="neon-sub">To'liq Tsiklli Xizmatlar</span>
+        <h2>Biznesingizni Bozor Lideriga Aylantiramiz</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="s-card">
+          <div class="s-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Performance Marketing</h3>
+          <p>Google Ads, Meta va TikTokda har bir tiyinni aniq hisoblab, to'g'ridan-to'g'ri to'lovchi mijozlar oqimini yo'naltiramiz.</p>
+        </div>
+        <div class="s-card">
+          <div class="s-icon"><i class="fa-solid fa-cube"></i></div>
+          <h3>WebGL & 3D Veb-Saytlar</h3>
+          <p>Foydalanuvchini bir ko'rishda maftun etuvchi, tez yuklanuvchi va yuqori konversiyali interaktiv veb-platformalar.</p>
+        </div>
+        <div class="s-card">
+          <div class="s-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>AI Chatbot & CRM Funnels</h3>
+          <p>Mijozlarga 24/7 javob beruvchi, sotuvlarni avtomatlashtiruvchi va savdo voronkasini to'liq nazorat qiluvchi AI agentlar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI & Budget Simulator -->
+  <section class="section bg-hud" id="calculator">
+    <div class="container">
+      <div class="calc-panel">
+        <div class="text-center">
+          <span class="neon-sub">Dinamik Simulyator</span>
+          <h2>Marketing Byudjeti & Kutilayotgan ROI</h2>
+          <p>Oylik reklama byudjetingizni belgilang va kutilayotgan sof savdo hajmini hisoblang.</p>
+        </div>
+
+        <div class="calc-grid">
+          <div class="c-col">
+            <div class="form-item">
+              <label>Oylik Marketing Byudjeti ($):</label>
+              <div class="val-display" id="lblBudget">$5,000 / oy</div>
+              <input type="range" id="rngBudget" min="1000" max="50000" step="1000" value="5000" class="c-slider">
+            </div>
+
+            <div class="form-item">
+              <label>Biznesingiz Yo'nalishi:</label>
+              <select id="selIndustry" class="c-select">
+                <option value="5.5" selected>E-Commerce & Retail (5.5x ROAS)</option>
+                <option value="6.8">B2B & IT Xizmatlari (6.8x ROAS)</option>
+                <option value="4.2">Ko'chmas Mulk & Qurilish (4.2x ROAS)</option>
+                <option value="7.5">EdTech & Onlayn Ta'lim (7.5x ROAS)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="c-col">
+            <div class="result-box">
+              <div class="r-row">
+                <small>Kutilayotgan Oylik Daromad:</small>
+                <h3 id="resRevenue">$27,500</h3>
+              </div>
+              <div class="r-row">
+                <small>Sof Foyda Prognozi:</small>
+                <h3 id="resProfit" class="text-neon">$22,500</h3>
+              </div>
+              <button class="btn btn-neon btn-block" id="btnLaunchCampaign">Kiber-Kampaniyani Boshlash</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="cyber-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>DIGITAL AGENCY <span class="sub-toxa">Toxa</span></h3>
+        <p>Ertangi kun marketingini bugun joriy qiluvchi kreativ kiber-agentlik.</p>
+        <small>© 2026 Toxa (qodirovtoirbektts-jpg). Barcha huquqlar himoyalangan.</small>
+      </div>
+      <div>
+        <h4>Xizmatlar</h4>
+        <a href="#services">Performance Marketing</a>
+        <a href="#services">WebGL 3D Web</a>
+        <a href="#calculator">ROI Simulyator</a>
+      </div>
+      <div>
+        <h4>Aloqa</h4>
+        <p>growth@toxa-digital.uz</p>
+        <p>+998 90 999 11 22</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-cyber" id="cyberToast">Xabar</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
